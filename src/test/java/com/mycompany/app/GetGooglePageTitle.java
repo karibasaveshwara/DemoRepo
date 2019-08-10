@@ -11,12 +11,12 @@ public class GetGooglePageTitle {
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("disable-infobars");
 		WebDriver driver=new ChromeDriver(options);
-		//WebDriver driver=new ChromeDriver();
+		
 		System.out.println("Launched chrome browser");
 		driver.manage().window().maximize();
 		System.out.println("Maximized window");
 		driver.get("http://google.com");
-		System.out.println("Title is:- "+driver.getTitle());
+		System.out.println("Title is :- "+driver.getTitle());
 		Thread.sleep(5000);
 		driver.quit();
 	}
